@@ -2,7 +2,7 @@ import React from 'react'
 import { Rnd } from 'react-rnd'
 import "./window.scss"
 
-const MacWindow = ({ children,width="60vw",height="70vh" }) => {
+const MacWindow = ({ children, width = "60vw", height = "70vh", windowName, setWindowsState }) => {
     return (
         <Rnd
             default={{
@@ -14,9 +14,23 @@ const MacWindow = ({ children,width="60vw",height="70vh" }) => {
             <div className="window">
                 <div className="nav">
                     <div className="dots">
-                        <div className="dot red"></div>
-                        <div className="dot yellow"></div>
-                        <div className="dot green"></div>
+                        <div
+                            onClick={() => setWindowsState(state => ({ ...state, [windowName]: false }))}
+                            className="dot red">
+                                <img className='close' src="./navbar-icons/close-line.svg" alt="" />
+                            </div>
+
+                        <div
+                            onClick={() => setWindowsState(state => ({ ...state, [windowName]: false }))}
+                            className="dot yellow">
+                                <img className='close' src="./navbar-icons/subtract-fill.svg" alt="" />
+                            </div>
+
+                        <div
+                            onClick={() => setWindowsState(state => ({ ...state, [windowName]: false }))}
+                            className="dot green">
+                                <img className='close' src="./navbar-icons/col3.svg" alt="" />
+                            </div>
                     </div>
 
                     <div className="title"><p>anurag_09 - zsh</p></div>
