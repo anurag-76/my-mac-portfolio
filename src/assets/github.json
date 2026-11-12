@@ -2,17 +2,16 @@
     {
         "id": 1,
         "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
-        "title": "Scheds - A Course Schedule Generator",
-        "description": "My proudest project yet, a comprehensive course schedule generator application built with ASP.NET Core MVC.",
+        "title": "Weather App",
+        "description": "i built this weather app as an assignment in my first semester, and i was very confident after building an application that fetch real data with the help of api.",
         "tags": [
-        "ASP.NET Core",
-        "C#",
-        "Entity Framework",
-        "SQL Server",
-        "Bootstrap",
-        "jQuery"
+        "HTML",
+        "JS",
+        "CSS",
+        "MySQL",
+        "PHP"
         ],
-        "repoLink": "https://github.com/microsoft/dotnet",
+        "repoLink": "https://github.com/anurag-76/Weather-app.git",
         "demoLink": "https://dotnet.microsoft.com/"
     },
     {
