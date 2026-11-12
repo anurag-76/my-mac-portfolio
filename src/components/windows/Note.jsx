@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Markdown, { MarkdownAsync } from 'react-markdown'
 import MacWindow from './MacWindow'
+import "./note.scss"
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atelierDuneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 const Note = () => {
 
@@ -16,7 +20,7 @@ const Note = () => {
     return (
         <MacWindow>
             <div className="note-window">
-                {markdown ? <Markdown>{markdown}</Markdown> : <p>Loading...</p>}
+                {markdown ? <SyntaxHighlighter language='typescript' style={atelierDuneDark}>{markdown}</SyntaxHighlighter> : <p>Loading...</p>}
             </div>
         </MacWindow>
     )

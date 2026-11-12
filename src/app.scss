@@ -1,25 +1,34 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html,
-body,
-#root {
+    }
+    html,
+    body,
+    #root {
     height: 100%;
     width: 100%;
-}
+    }
 
-body{
+    body {
     background-color: black;
-}
+    }
 
-main{
+    main {
     height: 100%;
     width: 100%;
-
+    position: absolute;
+    overflow: hidden;
     background-image: url(../public/mac-wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    }
+
+    .react-draggable-dragging embed {
+    pointer-events: none;
+    }
+
+    .react-draggable-dragging iframe {
+    pointer-events: none;
+    }

@@ -1,5 +1,5 @@
     .window {
-
+    
     background-color: #060606;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -45,5 +45,14 @@
     .main-content{
         height: 100%;
 
+    }
+
+    *::-webkit-scrollbar{
+        width: 8px;
+    }
+
+    *::-webkit-scrollbar-thumb{
+        background-color: #595959;
+        border-radius: 4px;
     }
     }
